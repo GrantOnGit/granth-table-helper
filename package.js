@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'Core functionality used to create reactive tables. Use this to build table templates for Blaze.',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/GrantOnGit/granth-table-helper.git',
+  git: 'https://github.com/GrantOnGit/meteor-table-helper.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'

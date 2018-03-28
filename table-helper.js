@@ -26,6 +26,10 @@ export class TableHelper {
 		return this;
 	}.bind(this);
 
+
+	// Data
+
+
 	parse = function(fields, modify) {
 		if(fields === null) {
             return this;
@@ -99,7 +103,6 @@ export class TableHelper {
         return this;
 	}.bind(this);
 
-
 	fields = function() {
 		const tables = this.reactive.get("tables");
 
@@ -129,7 +132,9 @@ export class TableHelper {
 		});
 	}.bind(this);
 
+
 	// Sorting
+
 
 	getSort = function(key, direction = null) {
 		if(typeof direction !== "string") {
@@ -196,7 +201,9 @@ export class TableHelper {
 		this.trigger("sort", this.sorting, key);
 	}.bind(this);
 
+
 	// Selecting
+
 
 	selectAll = function() {
 
@@ -214,7 +221,9 @@ export class TableHelper {
 
 	}.bind(this);
 
+	
 	// Events
+
 
 	on = function(event, method) {
 		if(!Array.isArray(this.events[event])) {
